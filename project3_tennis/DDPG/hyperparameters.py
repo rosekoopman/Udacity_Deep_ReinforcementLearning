@@ -1,0 +1,11 @@
+BUFFER_SIZE = int(1e4)          # replay buffer size
+BATCH_SIZE = 256                # minibatch size
+GAMMA = 0.95                    # discount factor
+TAU = 0.02                      # for soft update of target parameters
+LR_ACTOR = 1e-3                 # learning rate of the actor 
+LR_CRITIC = 1e-3                # learning rate of the critic
+WEIGHT_DECAY = 0                # L2 weight decay
+NOISE_DECAY = 0.999             # decrease the size of the noise
+LEARN_EVERY = 20                # learn every N timesteps
+N_LEARN = 10                    # learn N times 
+DO_GRADIENT_CLIP_CRITIC = False # Gradient clipping of critic parameters
